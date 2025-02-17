@@ -137,6 +137,6 @@ renderData();
 
 function addToCart(ind) {
     const dataToSave = containerData[ind];
-    const localData = JSON.parse(localStorage.getItem("cartData")) ?? []
+    const localData = JSON.parse(localStorage.getItem("cartData")) ?? [];
     localStorage.setItem("cartData", JSON.stringify([...localData, dataToSave]));
 }
